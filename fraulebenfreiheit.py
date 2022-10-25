@@ -12,4 +12,7 @@ st.header(":mailbox: Schreibe deinen Abgeordneten")
 
 st.write("Seit Wochen weht im Iran ein Wind der Veränderungen. Und seit Wochen lehnen sich immer mehr gesellschaftliche Schichten gegen das Unrechtsregime im Iran.")
 
-st.table(df.head())
+with st.form("mail"):
+    name = st.text_input("Vollständiger Name")
+    email = st.text_input("E-Mail Adresse")
+    plz = st.text_input("Deine Postleitzahl")
