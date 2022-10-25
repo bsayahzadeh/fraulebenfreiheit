@@ -1,8 +1,12 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
-df = pd.read_csv("/Users/betisa/Desktop/fraulebenfreiheit/deputies.csv", sep=";")
+path= Path.cwd() / "deputies.csv"
+path
+
+df = pd.read_csv(path, sep=";")
 
 st.header(":mailbox: Schreibe deinen Abgeordneten")
 
