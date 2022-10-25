@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-df = pd.read_excel("/Users/betisa/Desktop/fraulebenfreiheit/deputies.xlsx")
+df = pd.read_csv("/Users/betisa/Desktop/fraulebenfreiheit/deputies.csv", sep=";")
 
 st.header(":mailbox: Schreibe deinen Abgeordneten")
 
