@@ -30,3 +30,6 @@ if submit:
     email_list = df["E-Mail"]
     contact = st.multiselect("Möchtest du gewissen Abgeordneten NICHT schreiben? Diese kannst du hier entfernen:", email_list, default=email_list)
     st.write("Wir empfehlen grundsätzlich ALLEN Abgeordneten (parteiübergreifend) zu schreiben.")
+
+st.text_area("Deine E-Mail", value="""Sehr geehrte/r Abgeordnete/r, \nseit Wochen weht im Iran ein Wind der Veränderungen. Und seit Wochen lehnen sich immer mehr gesellschaftliche Schichten gegen das Unrechtsregime im Iran.
+             """)
