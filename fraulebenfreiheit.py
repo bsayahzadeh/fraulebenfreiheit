@@ -16,3 +16,5 @@ with st.form("mail"):
     name = st.text_input("Vollständiger Name")
     email = st.text_input("E-Mail Adresse")
     plz = st.text_input("Deine Postleitzahl")
+    
+    submit = st.form_submit_button("Weiter")
