@@ -23,3 +23,10 @@ with st.form("mail"):
     plz = st.text_input("Deine Postleitzahl")
     
     submit = st.form_submit_button("Weiter")
+
+if submit:
+df = get_info(plz)
+st.table(df)
+email_list = df["E-Mail"]
+contact = st.multiselect("Möchtest du gewissen Abgeordneten NICHT schreiben? Diese kannst du hier entfernen:", email_list, default=email_list)
+st.write("Wir empfehlen grundsätzlich ALLEN Abgeordneten (parteiübergreifend) zu schreiben.")
